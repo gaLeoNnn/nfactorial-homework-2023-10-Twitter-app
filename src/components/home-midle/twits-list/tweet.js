@@ -1,8 +1,8 @@
 import { COMMENTS, LIKES, VIEW, SHARE } from "../images";
 
 
-const Tweet = (item) => {
-  console.log(item)
+const Tweet = ({item, deleteTweet}) => {
+ 
   return (
     <div className="mt-3 mx-3">
       <p className="mx-5" style={{ fontSize: 13, fontWeight: 600 }}>You might like! <span style={{color:"blue"}}>See More!</span></p>
@@ -12,6 +12,7 @@ const Tweet = (item) => {
           <p>{item.authorName} <span style={{color: 'grey'}}>{item.authroUsername}</span></p>
           <p>{item.content}</p>
         </div>
+        <button onClick={()=>deleteTweet(item.id)} style={{height: 25}}>delete</button>
       </div>
       <div className="d-flex justify-content-around ">
         <div className="d-flex">
@@ -30,7 +31,7 @@ const Tweet = (item) => {
           <div style={{ width: 20, height: 20 }}>{SHARE}</div>
           <p className="px-1">{item.retweets}</p>
         </div>
-        
+    
             </div>
       </div>
   )
