@@ -1,16 +1,27 @@
 import './App.css';
-import SlideMenu from './components/slide-menu/slideMenu';
-import HomeMid from './components/home-midle/homeMid';
+import React from 'react';
+import LeftSideMenu from './components /Left-Side_Menu/left-side-menu';
+import MidHomeContent from './components /Mid-Home-Content/mid-home-content';
 
-function App() {
-  return (
-    <div className="App d-flex mx-5">
-      <SlideMenu />
-      <div className='vertical-diveder'></div>
-      <HomeMid />
-      <div className='vertical-diveder'></div>
-    </div>
-  );
+export default class App extends React.Component {
+
+  render(){
+
+    return(
+      <div className="App d-flex mx-5">
+        <LeftSideMenu />
+        <div className='divider'></div>
+        <MidHomeContent />
+        <div className='divider'></div>
+      </div>
+    )
+  }
+
 }
 
-export default App;
+
+
+
+
+
+

@@ -1,11 +1,10 @@
 .App {
-font-family: Roboto, sans-serif;
-font-weight: 400;
-font-size: 16px ;
+  font-family: 'Roboto', sans-serif;
 
 }
-.vertical-diveder {
-    width: 2px;
-    height: auto;
-    background-color:whitesmoke;
+
+.divider {
+  width: 2px;
+  height: auto;
+  background-color: whitesmoke;
 }
